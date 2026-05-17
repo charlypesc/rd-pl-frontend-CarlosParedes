@@ -5,7 +5,7 @@ const router = createRouter({
   routes: [
      {
       path: '/',
-      component: () => import('../components/ListarJugadores.vue'),
+      component: () => import('../components/jugadores/ListarJugadores.vue'),
     },
     {
       path: '/jugador/add',
