@@ -5,6 +5,7 @@ const router = createRouter({
   routes: [
      {
       path: '/',
+      component: () => import('../components/ListarJugadores.vue'),
     },
     {
       path: '/jugador/add',
@@ -16,7 +17,7 @@ const router = createRouter({
     },
     {
       path: '/jugador/update/:id',
-      component: () => import('../components/jugadores/ActualizarJugador.vue'), 
+      component: () => import('../components/jugadores/actualizarJugador.vue'), 
     },
     {
       path: '/:pathMatch(.*)*',
